@@ -78,3 +78,35 @@ body {
 
   transition: width 0.2s ease-out, padding-top 0.2s ease-out;
 } */
+
+.appbar {
+  background-color: #f7d736; /* Cor de fundo da barra de aplicativos */
+  height: 60px; /* Altura da barra */
+  width: 100%; /* Largura ocupando toda a largura do viewport */
+  position: fixed; /* Fixa a barra no topo da página */
+  top: 0; /* Posiciona a barra no topo da página */
+  left: 0; /* Alinha a barra à esquerda */
+  z-index: 1000; /* Ajusta a ordem de empilhamento */
+  display: flex; /* Usa flexbox para alinhar os itens horizontalmente */
+  align-items: center; /* Centraliza verticalmente o conteúdo */
+  padding: 0 10px; /* Adiciona padding para espaço ao redor dos itens */
+  box-shadow: 0 2px 50px rgba(0, 0, 0, 0.1); /* Adiciona sombra na parte inferior */
+}
+
+.logo {
+  width: 90px; /* Largura do logo */
+}
+
+.subtitle {
+  color: #000000; /* Cor do texto do subtítulo */
+  margin-left: 20px; /* Adiciona margem à esquerda para espaço entre o logo e o subtítulo */
+  font-family: "Roboto", sans-serif; /* Define a fonte do texto */
+}
+
+.form-card {
+  display: flex; /* Usa flexbox para alinhar os itens horizontalmente */
+  justify-content: center; /* Centraliza horizontalmente o conteúdo */
+  align-items: center; /* Centraliza verticalmente o conteúdo */
+  height: 20vh; /* Define a altura da seção */
+  padding: 40px 0px; /* Define a altura da seção */
+}
