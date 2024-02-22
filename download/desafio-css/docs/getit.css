@@ -29,7 +29,7 @@ body {
 
 /* Você pode usar o CSS comentado abaixo, se ajudar */
 /* Fonte: https://codepen.io/CrisWoler/pen/ogXBLj */
-/* .btn {
+.btn {
   position: relative;
   display: block;
   padding: 10px 15px;
@@ -42,6 +42,8 @@ body {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 
   background-color: #f7d736;
+
+  width: 100%;
 
   transition: background-color 0.3s;
 }
@@ -77,20 +79,19 @@ body {
   padding-top: 120%;
 
   transition: width 0.2s ease-out, padding-top 0.2s ease-out;
-} */
+}
 
 .appbar {
   background-color: #f7d736; /* Cor de fundo da barra de aplicativos */
   height: 60px; /* Altura da barra */
   width: 100%; /* Largura ocupando toda a largura do viewport */
-  position: fixed; /* Fixa a barra no topo da página */
   top: 0; /* Posiciona a barra no topo da página */
   left: 0; /* Alinha a barra à esquerda */
   z-index: 1000; /* Ajusta a ordem de empilhamento */
   display: flex; /* Usa flexbox para alinhar os itens horizontalmente */
   align-items: center; /* Centraliza verticalmente o conteúdo */
   padding: 0 10px; /* Adiciona padding para espaço ao redor dos itens */
-  box-shadow: 0 2px 50px rgba(0, 0, 0, 0.1); /* Adiciona sombra na parte inferior */
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .logo {
@@ -103,10 +104,161 @@ body {
   font-family: "Roboto", sans-serif; /* Define a fonte do texto */
 }
 
+.container {
+  display: flex;
+  justify-content: center; /* Alinha o conteúdo horizontalmente */
+  align-items: center; /* Alinha o conteúdo verticalmente */
+  margin-top: 10px;
+  border: #000000;
+  flex-direction: column; /* Alinha os itens verticalmente */
+}
+
 .form-card {
-  display: flex; /* Usa flexbox para alinhar os itens horizontalmente */
-  justify-content: center; /* Centraliza horizontalmente o conteúdo */
-  align-items: center; /* Centraliza verticalmente o conteúdo */
-  height: 20vh; /* Define a altura da seção */
-  padding: 40px 0px; /* Define a altura da seção */
+  background-color: #fff;
+  border-radius: 8px;;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 40%;
+  margin-top: 20px;
+}
+
+.form-card-title {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 0px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Garante que a largura inclui a espessura da borda e o preenchimento */
+  background-color: #fff;
+  font-size: 30px;
+}
+
+.autoresize {
+  width: 100%;
+  height: 50px; /* Altura inicial */
+  resize: vertical; /* Permite redimensionamento vertical */
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 0px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Garante que a largura inclui a espessura da borda e o preenchimento */
+  background-color: #fff;
+  font-size: 15px;
+  resize: none;
+}
+
+/* .btn {
+  padding: 10px 150px;
+  background-color: #f7d736;
+  color: #000000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  justify-content: center;
+}
+
+.btn:hover {
+  background-color: #e0d426;
+} */
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 20px;
+  /* flex-direction: column; */
+}
+
+.card{
+  background-color: #f7d736;
+  border-radius: 6px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 10px;
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 100px;
+  max-height: 100px;
+  transform: rotate(-3deg);
+}
+
+.card-title {
+  font-size: 20px;
+  font-family: 'Permanent Marker', cursive;
+  margin-bottom: 10px;
+}
+
+.card-content {
+  font-size: 15px;
+  font-family: 'Permanent Marker', cursive;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.card-color-1{
+  background-color: #ead3a7;
+}
+
+.card-color-2{
+  background-color: #9de0f5;
+}
+
+.card-color-3{
+  background-color: #ef89ba;
+}
+
+.card-color-4{
+  background-color: #fae890;
+}
+
+.card-color-5{
+  background-color: #abe9c1;
+}
+
+.card-rotation-1{
+  transform: rotate(-5deg);
+}
+
+.card-rotation-2{
+  transform: rotate(5deg);
+}
+
+.card-rotation-3{
+  transform: rotate(-2deg);
+}
+
+.card-rotation-4{
+  transform: rotate(2deg);
+}
+
+.card-rotation-5{
+  transform: rotate(-1deg);
+}
+
+.card-rotation-6{
+  transform: rotate(1deg);
+}
+
+.card-rotation-7{
+  transform: rotate(-4deg);
+}
+
+.card-rotation-8{
+  transform: rotate(4deg);
+}
+
+.card-rotation-9{
+  transform: rotate(-3deg);
+}
+
+.card-rotation-10{
+  transform: rotate(3deg);
+}
+
+.card-rotation-11{
+  transform: rotate(0deg);
 }
